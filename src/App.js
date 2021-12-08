@@ -11,19 +11,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Edit <code>src/App.js</code> and save to reload </p>
         <a
-          className="App-link"
+        className="App-link"
           href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
         <Greetings name = "Manuel"/>
-        <Calculadora firstValue = {5} secondValue={2} operator = {"suma"}/>
+        <Calculadora valorA = {5} valorB={5} operador = {"multiplicacion"}/>
       </header>
     </div>
   );
