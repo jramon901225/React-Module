@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+//Components
+import Greetings from './components/Greetings';
+import Calculadora from './components/Calculadora'
+
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +22,8 @@ function App() {
         >
           Learn React
         </a>
+        <Greetings name = "Manuel"/>
+        <Calculadora firstValue = {5} secondValue={2} operator = {"suma"}/>
       </header>
     </div>
   );
