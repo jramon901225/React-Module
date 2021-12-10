@@ -1,0 +1,15 @@
+.btn {
+    text-align: center;
+    color: wheat;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    color:chartreuse;
+    border-color: chartreuse;
+    box-shadow: 5px 10px 10px ;
+    transition: 0.5s;
+}

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 //     if (word )  
 // } 
 function Greetings({name, lastName}) {
+    console.log('Paso 1: Montaje')
     const [fakeName, setFakeName] = useState("Manuel Ramon");
     return (
         <div>

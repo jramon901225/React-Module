@@ -4,6 +4,9 @@ import './App.css';
 //Components
 import Greetings from './components/Greetings';
 import Calculadora from './components/Calculadora'
+import Counter from './components/Counter';
+import Navbar from './components/Navbar';
+
 
 
 function App() {
@@ -18,8 +21,8 @@ function App() {
           target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
-        <Greetings name = "Manuel"/>
-        <Calculadora valorA = {5} valorB={5} operador = {"multiplicacion"}/>
+       <Navbar/>
+       
       </header>
     </div>
   );
