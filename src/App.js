@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 //Components
-import Greetings from './components/Greetings';
-import Calculadora from './components/Calculadora'
-import Counter from './components/Counter';
-import Navbar from './components/Navbar';
+// import Greetings from './components/Greetings';
+// import Calculadora from './components/Calculadora'
+// import Counter from './components/Counter';
+// import Navbar from './components/Navbar';
+import Render from './components/Cards/Render';
 
 
 
@@ -21,8 +22,7 @@ function App() {
           target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
-       <Navbar/>
-       
+       <Render/>
       </header>
     </div>
   );

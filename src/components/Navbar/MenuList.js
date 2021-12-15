@@ -17,12 +17,12 @@ const MenuList = [
     {
         id: 4,
         link: "Cerrar Sesion",
-        content: "content 3"
+        content: "content 4"
     },
     {
         id: 5,
         link: "Shop",
-        content: "content 3"
+        content: "content 5"
     },
 ];
 

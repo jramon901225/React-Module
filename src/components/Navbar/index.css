@@ -14,3 +14,13 @@ li:hover {
 .li-active {
 	color: rgb(26, 87, 200);
 }
+
+.checkActiveContent {
+	margin-top: 150px;
+	display: block;
+}
+
+.notActiveContent {
+	
+	display: none;
+}

@@ -1,65 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuList from "./MenuList";
 
 // Styles
 import "./index.css";
 
-
-
 function Navbar() {
-	const [active, setActive] = useState(0);
+  const [active, setActive] = useState(0);
 
-    const handleClick = (itemID) => {
-		setActive(itemID);
-	};
+  const [users, setUsers] = useState([]);
 
-    const checkActive = (itemID) => (active === itemID ? "li-active" : ""); 
+  useEffect(() => {
+    const getUsers = async () => {
+      const response = await fetch("https://rickandmortyapi.com/api/character");
+      console.table(response);
+      const data = await response.json();
+      console.log(data);
+      setUsers(data);
+      return({data})
+    };
+
+    getUsers();
+  }, []);
+
  
-    let content = "";
-    switch (active) {
-        case 1:
-         content = "contenido 1";
-         break;
-        case 2:
-         content = "contenido 2";
-         break;
-        case 3:
-         content = "contenido 3";
-         break;
-        default:
-            content = "";
-            break;
-    }
-
-   return (
-       <div>
-           {MenuList.map((list) => {
-             const links = list.link
-             return <li className={checkActive(list.id)} onClick={() => handleClick(list.id)}>{links}</li>
-           })}
-       </div>
-   )
-
-   
-
-    // return (
-    //     <div>
-    //       	<ul>
-	// 			<li  className={checkActive(1)} onClick={() => handleClick(1)}>
-	// 			    {menu}
-	// 			 </li>
-	// 			<li className={checkActive(2)} onClick={() => handleClick(2)}>
-    //                 {menu}
-	// 			</li>
-	// 			<li className={checkActive(3)} onClick={() => handleClick(3)}>
-    //                 {menu}
-    //                 </li> 
-	// 		</ul>
-    //         <div>
-    //             <h3>{content}</h3>
-    //         </div>
-    //     </div>
-    // );
+  
 }
 
 export default Navbar;

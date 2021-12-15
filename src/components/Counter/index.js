@@ -7,7 +7,7 @@ import './index.css'
 
 export default  function Counter() {
 	const [counter, setCounter] = useState(0);
-	const [otherCounter, setOtherCounter] = useState(0);
+  const [otherCounter, setOtherCounter] = useState(0);
 
 	useEffect(() => {
 		console.warn("Me ejecuto  cada que cambie el estado other counter");

@@ -1,0 +1,27 @@
+.card {
+  width: 400px;
+  height: 150px;
+  border-color: black;
+  background-color: rebeccapurple;
+  margin: 20px;
+  display: flex;
+}
+
+.imgContainer {
+  width: 100px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.infoContainer {
+  display: flex;
+  position: relative;
+  padding: 5px;
+  font-size: 20px;
+  border: yellow 1px solid;
+}
+
+p {
+  margin: 10px;
+}
